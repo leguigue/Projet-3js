@@ -70,7 +70,7 @@ if (game == "O") {
         let iachoice = randomize(0, ia.attack.length - 1)
         return ia.attack[iachoice]
     }
-    while (player.pv > 0 || ia.pv > 0) {
+    while (player.pv >= 0 || ia.pv >= 0) {
         let atkplay = choice()
         atk(atkplay, player, ia)
         let atkia = playia()
